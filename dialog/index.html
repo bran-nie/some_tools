@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dialog</title>
+    <style>
+        div#showDialog {
+            display: inline-block;
+            position: relative;
+            top: 100px;
+            left: 300px;
+            border: 1px solid #ccc;
+            padding: 30px 40px;
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+<div id="showDialog">show Dialog</div>
+<script>
+    const dialog = new Dialog()
+    const el = document.getElementById('showDialog')
+    el.addEventListener('click', function (e) {
+        e.stopPropagation()
+        dialog.open()
+    })
+</script>
+</body>
+</html>
