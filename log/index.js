@@ -29,6 +29,7 @@ class Log {
     info(...v) {
         v = v.join(' ')
         console.log(`%c${v}`, infoStyle)
+        console.log('test')
     }
 }
 const log = new Log()
