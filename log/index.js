@@ -21,6 +21,7 @@ class Log {
 
     error(...v) {
         v = v.join(' ')
+        console.log('master')
         console.log(`%c${v}`, errorStyle)
     }
 
