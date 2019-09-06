@@ -15,6 +15,7 @@ class Log {
     }
 
     warn(...v) {
+        console.log('master 2')
         v = v.join(' ')
         console.log(`%c${v}`, warnStyle)
     }
