@@ -20,3 +20,8 @@ const search2query = (url) => {
         console.log(error);
     }
 };
+
+
+// test
+const url = 'http://www.google.com?num=1&isZH=true&name=test&age=18';
+const query = search2query(url);
