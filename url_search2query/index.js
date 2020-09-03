@@ -5,7 +5,7 @@ const search2query = (url) => {
         for (let [key, value] of searchParams) {
             query[key] = value;
 
-            const isNumber = /[0-9]+/;
+            const isNumber = /^[0-9]+$/;
             const isBoolean = /true|false/;
             if (isNumber.test(value)) {
                 query[`_${key}`] = Number(value);
